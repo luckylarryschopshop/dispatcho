@@ -17355,6 +17355,78 @@
           "slots": {
             "path": "app.py"
           }
+        },
+        {
+          "text": "view {path}",
+          "slots": {
+            "path": "plan.md"
+          }
+        },
+        {
+          "text": "view {path}",
+          "slots": {
+            "path": "README.md"
+          }
+        },
+        {
+          "text": "view {path}",
+          "slots": {
+            "path": "app.py"
+          }
+        },
+        {
+          "text": "view {path}",
+          "slots": {
+            "path": "config.yaml"
+          }
+        },
+        {
+          "text": "view the {path} file",
+          "slots": {
+            "path": "plan.md"
+          }
+        },
+        {
+          "text": "view the contents of {path}",
+          "slots": {
+            "path": "server.py"
+          }
+        },
+        {
+          "text": "show {path}",
+          "slots": {
+            "path": "plan.md"
+          }
+        },
+        {
+          "text": "show {path}",
+          "slots": {
+            "path": "README.md"
+          }
+        },
+        {
+          "text": "show me {path}",
+          "slots": {
+            "path": "app.py"
+          }
+        },
+        {
+          "text": "display {path}",
+          "slots": {
+            "path": "notes.txt"
+          }
+        },
+        {
+          "text": "open {path}",
+          "slots": {
+            "path": "config.json"
+          }
+        },
+        {
+          "text": "print {path}",
+          "slots": {
+            "path": "output.log"
+          }
         }
       ]
     },
@@ -71900,6 +71972,22 @@
         {
           "text": "save what I've done",
           "slots": {}
+        },
+        {
+          "text": "save my work",
+          "slots": {}
+        },
+        {
+          "text": "save my changes",
+          "slots": {}
+        },
+        {
+          "text": "save everything",
+          "slots": {}
+        },
+        {
+          "text": "save progress",
+          "slots": {}
         }
       ]
     },
@@ -95155,6 +95243,111 @@
     },
     {
       "text": "can you write tests",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "write the plan to plan.md",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "write the plan as a separate file",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "draft the plan into plan.md",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "can you draft the plan into the file",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "compose a readme for this project",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "write up the documentation",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "put that in a file",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "write that to disk",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "draft a readme for me",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "can you write the spec to spec.md",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "generate the config and save it",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "make a new repo called Mindforge",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "create a new repository",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "you need to make a new repo",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "set up a GitHub repo",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "create a repo for this project",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "initialize a new repository on GitHub",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "push this to a new repo",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "configure CI/CD",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "CI/CD pipeline",
+      "slots": {},
+      "intent": "__none__"
+    },
+    {
+      "text": "continuous deployment setup",
       "slots": {},
       "intent": "__none__"
     }

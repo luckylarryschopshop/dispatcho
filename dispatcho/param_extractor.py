@@ -64,14 +64,23 @@ def build_frame_vocab(intents: dict) -> dict[str, set[str]]:
 
 
 def _extract_quoted(text: str) -> list[str]:
-    """Extract quoted strings — no regex, just split on quotes."""
+    """Extract quoted strings — no regex, just split on quotes.
+
+    Filters out contractions: "it's", "don't", "isn't" etc.
+    A contraction produces a fragment starting with s/t/re/ve/ll/d.
+    """
+    _contraction_starts = {"s ", "t ", "re ", "ve ", "ll ", "d ", "s,", "t,", "s.", "t."}
     results = []
     for quote_char in ("'", '"'):
         parts = text.split(quote_char)
-        # Odd-indexed parts are inside quotes: a'b'c → ['a', 'b', 'c']
         for i in range(1, len(parts), 2):
-            if parts[i].strip():
-                results.append(parts[i])
+            candidate = parts[i].strip()
+            if not candidate:
+                continue
+            # Skip contraction fragments: it'S roadmap → "s roadmap"
+            if quote_char == "'" and any(candidate.lower().startswith(c) for c in _contraction_starts):
+                continue
+            results.append(candidate)
     return results
 
 
